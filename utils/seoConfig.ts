@@ -5,9 +5,9 @@ import type { ManifestOptions } from "vite-plugin-pwa"
  * Defines the default SEO configuration for the website.
  */
 export const seoConfig = {
-	baseURL: "https://comercyo.com", // Change this to your production URL.
+	baseURL: "https://asdeluz.com", // Change this to your production URL.
 	description:
-		"Comercyo es una empresa de desarrollo de software especializado en landing pages personalizadas de alto rendimiento. Actualmente construimos un e-commerce integral que unifica ERP y CMS, diseñado para escalar negocios y optimizar su presencia digital.", // Change this to be your website's description.
+		"As de Luz ofrece productos naturales y alimentos esenciales para quienes buscan cuidarse de forma simple y consciente, con una amplia variedad de opciones adaptadas a las necesidades de cada cliente, brindamos un proceso de compra y distribución enfocado en la frescura y la calidad.", // Change this to be your website's description.
 	type: "website",
 	image: {
 		url: "https://picsum.photos/1200/630", // Change this to your website's thumbnail.
@@ -15,9 +15,9 @@ export const seoConfig = {
 		width: 1200,
 		height: 630
 	},
-	siteName: "Comercyo", // Change this to your website's name,
+	siteName: "As de luz", // Change this to your website's name,
 	twitter: {
-		card: "Comercyo es una empresa de desarrollo de software especializado en landing pages personalizadas de alto rendimiento. Actualmente construimos un e-commerce integral que unifica ERP y CMS, diseñado para escalar negocios y optimizar su presencia digital."
+		card: "As de Luz ofrece productos naturales y alimentos esenciales para quienes buscan cuidarse de forma simple y consciente, con una amplia variedad de opciones adaptadas a las necesidades de cada cliente, brindamos un proceso de compra y distribución enfocado en la frescura y la calidad."
 	}
 }
 
@@ -25,10 +25,10 @@ export const seoConfig = {
  * Defines the configuration for PWA webmanifest.
  */
 export const manifest: Partial<ManifestOptions> = {
-	name: "Comercyo", // Change this to your website's name.
-	short_name: "Comercyo", // Change this to your website's short name.
+	name: "As de luz", // Change this to your website's name.
+	short_name: "As de luz", // Change this to your website's short name.
 	description:
-		"Comercyo es una empresa de desarrollo de software especializado en landing pages personalizadas de alto rendimiento. Actualmente construimos un e-commerce integral que unifica ERP y CMS, diseñado para escalar negocios y optimizar su presencia digital.", // Change this to be your website's description.
+		"As de Luz ofrece productos naturales y alimentos esenciales para quienes buscan cuidarse de forma simple y consciente, con una amplia variedad de opciones adaptadas a las necesidades de cada cliente, brindamos un proceso de compra y distribución enfocado en la frescura y la calidad.", // Change this to be your website's description.
 	 // Change this to your websites description.
 	theme_color: "#ffffffff", // Change this to your primary color.
 	background_color: "#ffffff", // Change this to your background color.
