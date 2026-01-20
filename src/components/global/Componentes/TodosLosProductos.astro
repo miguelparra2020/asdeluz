@@ -1,0 +1,103 @@
+---
+/* Componente Astro puro */
+---
+
+
+<main class="pb-24">
+
+  <!-- HERO -->
+  <section class="px-4 pt-8 pb-4 max-w-md mx-auto">
+    <span class="text-primary font-bold text-xs uppercase tracking-widest mb-2 block">
+      Premium & Orgánico
+    </span>
+
+    <h2 class="text-3xl font-bold leading-tight tracking-tight">
+      Cosecha Natural
+    </h2>
+
+    <p class="text-[#556b5b] dark:text-[#a1b2a7] mt-2 text-sm leading-relaxed max-w-[85%]">
+      Descubre alimentos que nutren tu cuerpo y alma, directo del origen a tu mesa.
+    </p>
+  </section>
+
+  <!-- MASONRY -->
+  <section class="px-4 max-w-md mx-auto">
+    <div class="masonry-grid">
+
+      <!-- ITEM -->
+      <div class="masonry-item group relative overflow-hidden rounded-xl border border-primary/10 shadow-sm">
+        <div
+          class="aspect-[4/5] bg-cover bg-center"
+          style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCOwTidEhIL3EkTeNq5ogGvgLFxU3a8Ppz1qglzg_MnHq07T9ZXD2ih5AUFcamTzgEO-jLN26CTR_NRt-OHoCUMJA69dzB9khbDkxtc8BXkpNYAL92ZjGtVgAbDGsK7LSUhR9uHb-4avMwafvmpu2CYXdVBuIoyswngf2v3MW2xW_mEKfJ7okZ83pAZCHrqEPivnkVJZODWQJWNiIeu6w68_p9UJfATrJTKp_VlW3FfQD3PveC3Wu3Omv3-LwJxSYl7sAV0-5KH0U')"
+        ></div>
+
+        <div class="absolute inset-0 image-overlay flex flex-col justify-end p-4">
+          <span class="bg-accent-yellow text-background-dark text-[10px] font-bold px-2 py-0.5 rounded-full w-fit mb-2">
+            DESTACADO
+          </span>
+          <p class="text-white text-sm font-bold">Bowl Vitalidad</p>
+
+          <button class="mt-2 bg-white/20 backdrop-blur-md text-white border border-white/30 rounded-lg py-2 text-xs font-bold opacity-0 group-hover:bg-whatsapp-green group-hover:opacity-100 transition-all">
+            Pedir ahora
+          </button>
+        </div>
+      </div>
+
+      <!-- DUPLICA ITEMS -->
+      <!-- Puedes convertir esto en un array después -->
+
+    </div>
+  </section>
+
+  <!-- BIENESTAR -->
+  <section class="px-4 pt-10 pb-4 max-w-md mx-auto">
+    <h2 class="text-2xl font-bold tracking-tight">
+      Bienestar Esencial
+    </h2>
+    <p class="text-[#556b5b] dark:text-[#a1b2a7] mt-1 text-sm">
+      Cuidado consciente para tu hogar.
+    </p>
+  </section>
+
+  <section class="px-4 grid grid-cols-2 gap-3 max-w-md mx-auto">
+    <div class="bg-primary/10 rounded-xl p-4 flex flex-col gap-3">
+      <div class="w-10 h-10 bg-white dark:bg-background-dark rounded-full flex items-center justify-center text-primary shadow-sm">
+        <span class="material-symbols-outlined">spa</span>
+      </div>
+      <h3 class="font-bold text-sm">Cuidado Personal</h3>
+      <p class="text-xs text-[#556b5b] dark:text-[#a1b2a7]">
+        Jabones y bálsamos 100% botánicos.
+      </p>
+    </div>
+
+    <div class="bg-accent-sage/10 rounded-xl p-4 flex flex-col gap-3 border border-accent-sage/10">
+      <div class="w-10 h-10 bg-white dark:bg-background-dark rounded-full flex items-center justify-center text-accent-sage shadow-sm">
+        <span class="material-symbols-outlined">eco</span>
+      </div>
+      <h3 class="font-bold text-sm">Hogar Sustentable</h3>
+      <p class="text-xs text-[#556b5b] dark:text-[#a1b2a7]">
+        Productos zero-waste para tu día.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+
+
+<style>
+  .masonry-grid {
+    column-count: 2;
+    column-gap: 12px;
+  }
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 12px;
+  }
+  .image-overlay {
+    background: linear-gradient(0deg, #55A767cc 0%, rgba(85,167,103,0) 80%);
+  }
+  .font-variation-fill-1 {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+</style>
