@@ -1,0 +1,151 @@
+---
+import { BaggageClaim, MessageCircleMore, ShieldCheck } from 'lucide-react';
+---
+
+<section class="px-6 py-12">
+
+  <!-- CONTENEDOR -->
+  <div class="flex flex-col lg:flex-row gap-14 max-w-6xl mx-auto">
+
+    <!-- ===================== -->
+    <!-- CÓMO COMPRAR -->
+    <!-- ===================== -->
+    <div class="flex-1">
+
+      <h2 class=" text-2xl font-extrabold mb-10 text-center lg:text-left">
+        ¿Cómo comprar?
+      </h2>
+
+      <div class="flex flex-col gap-10">
+
+        <!-- Paso 1 -->
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full border-2 border-[#A7C70E] text-[#A7C70E] font-bold flex items-center justify-center">
+              1
+            </div>
+            <div class="w-[2px] bg-[#A7C70E] flex-1 mt-1"></div>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-3 mb-1">
+              <h3 class=" font-bold text-lg">
+                Elige tus productos
+              </h3>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Explora nuestro catálogo curado de productos naturales y alimentos esenciales.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-[#A7C70E] text-white font-bold flex items-center justify-center">
+              2
+            </div>
+            <div class="w-[2px] bg-[#A7C70E] flex-1 mt-1"></div>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-3 mb-1">
+              <h3 class=" font-bold text-lg">
+                Escríbenos por WhatsApp
+              </h3>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Envíanos tu pedido y te atenderemos personalmente para confirmar detalles.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full border-2 border-[#A7C70E] text-[#A7C70E] font-bold flex items-center justify-center">
+              3
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-3 mb-1">
+              <h3 class=" font-bold text-lg">
+                Recibe en tu casa
+              </h3>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Logística eficiente y consciente directo hasta la puerta de tu hogar.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- POR QUÉ ELEGIRNOS -->
+    <!-- ===================== -->
+    <div class="flex-1">
+
+      <h2 class="text-2xl font-extrabold mb-10 text-center lg:text-left">
+        ¿Por qué elegirnos?
+      </h2>
+
+      <div class="flex flex-col gap-4">
+        <div class=" bg-white flex items-start gap-4 bg-ge rounded-xl border border-[#55A767]/20 p-5">
+         <div class="text-[#55A767] bg-green-100 p-4 rounded-lg">
+            <ShieldCheck />
+         </div>
+            
+          <div>
+            <h4 class="font-bold ">Atención humana</h4>
+            <p class="text-sm ">Personas reales, sin bots.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 bg-white rounded-xl border border-[#55A767]/20 p-5">
+           <div class="text-[#55A767] bg-green-100 p-4 rounded-lg">
+                <BaggageClaim />
+           </div>            
+          <div>
+            <h4 class="font-bold ">Productos seleccionados</h4>
+            <p class="text-sm ">Calidad desde el origen.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 bg-white rounded-xl border border-[#55A767]/20 p-5">
+          
+          <div class="text-[#55A767] bg-green-100 p-4 rounded-lg">
+            <MessageCircleMore />
+          </div>
+          <div>
+            <h4 class="font-bold">Comunicación directa</h4>
+            <p class="text-sm">Siempre por WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===================== -->
+  <!-- BOTÓN WHATSAPP -->
+  <!-- ===================== -->
+  <div class="mt-16 flex justify-center">
+    <a
+      href="https://wa.me/XXXXXXXXXX"
+      target="_blank"
+      class="flex items-center gap-3
+             bg-[#55A767] hover:bg-[#3fb800]
+             text-white font-bold
+             px-12 py-5 rounded-xl
+             shadow-lg transition-all
+             active:scale-95"
+    >
+      <MessageCircleMore size={22} />
+      Iniciar pedido por WhatsApp
+    </a>
+  </div>
+
+</section>
