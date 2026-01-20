@@ -1,6 +1,129 @@
 ---
-
+const currentYear = new Date().getFullYear();
+import ImgHero from '@img/asdeluzHero.jpg';
+import { BaggageClaim, MessageCircleMore, ShieldCheck } from 'lucide-react';
 ---
-<div class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-red-50">
-      As de luz alimentos naturales
+
+<section
+  class="
+    w-screen
+    h-[calc(100dvh-10vh)]
+    bg-bgpage
+    overflow-hidden
+    pb-20 md:pb-0
+    flex flex-col md:flex-row
+  "
+>
+
+  <!-- IMAGEN -->
+  <div class="relative w-full h-[30vh] md:h-full md:w-1/2 flex-shrink-0">
+    <img
+      src={ImgHero}
+      alt="Productos naturales orgánicos"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-bgpage"></div>
+
+    <!-- Badge solo desktop -->
+    <div class="absolute bottom-6 left-6 hidden md:flex bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg border-l-4 border-primary">
+      <div>
+        <p class="text-accent text-xs font-bold uppercase tracking-widest">
+          Cosecha {currentYear}
+        </p>
+        <p class="font-serif italic text-textbody text-sm">
+          100% Orgánico & Natural
+        </p>
       </div>
+    </div>
+  </div>
+
+  <!-- CONTENIDO -->
+  <div
+    class="
+      w-full
+      md:w-1/2
+      flex
+      flex-col
+      justify-start md:justify-center
+      px-4 sm:px-6 lg:px-20 xl:px-28
+      pt-8 md:pt-0
+    "
+  >
+    <div class="w-full max-w-none md:max-w-xl flex flex-col gap-6 md:gap-10">
+
+      <!-- TÍTULO -->
+      <header class="flex flex-col gap-4">
+        <h1 class="text-[26px] sm:text-4xl lg:text-7xl leading-tight tracking-tight text-accent">
+          <span class="block serif-font text-[#1f1a14]">
+            Tu bienestar
+          </span>
+          <span class="italic font-light text-primary">
+            comienza con lo natural
+          </span>
+        </h1>
+
+        <div class="h-1 w-16 bg-secondary rounded-full"></div>
+      </header>
+
+      <!-- TEXTO -->
+      <p class="text-sm sm:text-lg lg:text-xl leading-relaxed font-medium text-textbody/90">
+        Alimentación simple, consciente y real.  
+        Seleccionamos semillas, granos y frutos de alta calidad para nutrir tu cuerpo desde la raíz.
+      </p>
+
+      <!-- CTA -->
+      <div class="flex flex-col gap-5 pt-2">
+
+        <a
+          href="https://api.whatsapp.com/send?phone=573126063529&text=Quiero%20m%C3%A1s%20informaci%C3%B3n"
+          target="_blank"
+          class="
+            bg-[#55A767]
+            flex items-center justify-center gap-3
+            bg-primary hover:bg-[#3fb800]
+            text-white
+            w-full sm:w-auto
+            px-7 py-3.5
+            rounded-lg
+            shadow-lg shadow-primary/30
+            transition-all duration-300
+            active:scale-95
+          "
+        >
+          <span class="material-symbols-outlined text-xl">
+            <MessageCircleMore />
+          </span>
+          <span class="font-bold tracking-wide">
+            Comprar por WhatsApp
+          </span>
+        </a>
+
+        <!-- TRUST -->
+        <div class="flex gap-6 pt-4 border-t border-accent/10">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-base text-[#55A767]">
+              <ShieldCheck />
+            </span>
+            <span class="text-[10px] font-bold uppercase tracking-wider">
+              Calidad Premium
+            </span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-base text-[#55A767]">
+              <BaggageClaim />
+            </span>
+            <span class="text-[10px] font-bold uppercase tracking-wider">
+              Entregas en Pereira y Dosquebradas
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
