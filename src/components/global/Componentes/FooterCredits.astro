@@ -1,0 +1,86 @@
+---
+import MiguelPaezImg from '@img/logoCompany.jpg'
+import ComercyoLogo from '@img/logoCompany.jpg'
+
+const currentYear = new Date().getFullYear()
+---
+<footer class="w-full border-t border-gray-200 bg-white py-6">
+  <div class="mx-auto max-w-7xl px-4 flex flex-col gap-6">
+
+    <!-- Top: Logo + Nav -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+      <!-- Comercyo® branding -->
+      <div class="flex items-center gap-3">
+        <img
+          src={ComercyoLogo}
+          alt="Desarrollo web de comercios digitales y e-commerces"
+          class="h-8 w-auto"
+        />
+        <span class="text-lg font-semibold text-gray-900">
+          Comercyo®.com
+        </span>
+      </div>
+
+      <!-- Navigation -->
+      <nav
+        class="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-gray-600"
+        aria-label="Footer navigation"
+      >
+        <a href="/serviciosagendamiento" class="hover:text-gray-900 transition">
+          Servicios
+        </a>
+        <a href="/fotos" class="hover:text-gray-900 transition">
+          Productos
+        </a>
+        <a href="/ubicacion" class="hover:text-gray-900 transition">
+          Publicaciones
+        </a>
+      </nav>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-gray-200" />
+
+    <!-- Bottom -->
+    <div class="flex flex-col items-center text-center text-sm text-gray-600 gap-2">
+
+      <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+  <span>
+    © {currentYear} Todos los derechos reservados.
+  </span>
+
+  <div class="flex items-center gap-2">
+    <span></span>
+
+    <img
+      src={MiguelPaezImg}
+      alt="Miguel Páez - Desarrollador de software"
+      class="w-8 h-8 rounded-full object-cover border"
+    />
+
+    <span class="font-medium">
+      Comercyo® – Diseño y desarrollo de comercios digitales y software a medida
+
+    </span>
+  </div>
+</div>
+
+
+      <!-- Credits -->
+      <div class="flex flex-col items-center gap-1">
+        <div class="flex items-center gap-2">
+          <img
+            src={MiguelPaezImg}
+            alt="Miguel Páez - Desarrollador de software"
+            class="w-8 h-8 rounded-full object-cover border"
+          />
+          <span>
+            Miguel Páez — Desarrollador de software
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
